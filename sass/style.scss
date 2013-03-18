@@ -310,6 +310,14 @@ h1 {
 
 	.gallery {
 		padding: 0 30px;
+
+		dl.gallery-item {
+			padding: 0;
+		}
+
+		dd.gallery-caption {
+			padding: 0;
+		}
 	}
 
 	.wp-caption {
@@ -553,6 +561,23 @@ article img, img.size-full {
 
 .twitter-tweet-rendered {
 	padding-left: 30px;
+}
+
+.page-404 {
+	padding: 15px 0 25px 0;
+
+	.error-code {
+		font-weight: bold;
+		color: #ccc;
+	}
+}
+
+.search-404 {
+
+	h2 {
+		padding-left: 0;
+	}
+
 }
 
 /* Retina support for icons */

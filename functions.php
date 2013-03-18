@@ -12,6 +12,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 if ( function_exists('register_sidebar') )
     register_sidebar(array(
+    	'name' => 'Sidebar',
         'before_widget' => '<div id="%1$s" class="unit widget %2$s">',
         'after_widget' => '</div>',
     ));

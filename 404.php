@@ -2,27 +2,20 @@
 		<?php get_sidebar(); ?>
 
 		<div id="content">
-			<?php $offset = substr(date('O'), 0, -2).':00';
-			if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<article class="unit post">
+			<article class="unit post page-404">
 				
 				<header>
 				<h1>Well this is awkward</h1>
+				<p class='error-code'>404 - not found</p>
 				</header>
-				<p>Sorry, we can't seem to find what you wanted.</p>
+				<p>Sorry, we can't seem to find what you wanted. You could try using the search box below to find things if that helps.</p>
 				
-				<?php get_search_form(); ?>
-
-				<footer class="post-footer">
-
-				</footer>
+				<div class="search-404">
+					<?php get_search_form(); ?>
+				</div>
 
 			</article>
-
-			<?php endwhile; else: ?>
-			<div class="unit post"><p><?php _e('Sorry, no posts matched your criteria.'); ?></p></div>
-			<?php endif; ?>
 
 		</div>
 <?php get_footer(); ?>
