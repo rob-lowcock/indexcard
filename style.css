@@ -1,0 +1,667 @@
+/*
+Theme Name: Index Card
+Theme URI: http://cunningtitle.com/
+Description: A simple theme to focus on content and images
+Author: Rob Lowcock
+Author URI: http://cunningtitle.com/
+Version: 1.0
+Tags: fixed-width, minimalist, minimal, white
+
+License: MIT
+License URI: http://opensource.org/licenses/mit-license.php
+
+*/
+/* line 17, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 18, sass/style.scss */
+body {
+  background-color: #e5e5e5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 23, sass/style.scss */
+em {
+  font-style: italic;
+}
+
+/* line 27, sass/style.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 31, sass/style.scss */
+p, ul, ol, dl {
+  font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+  padding: 9px 30px;
+  font-size: 10pt;
+  line-height: 14pt;
+}
+
+/* line 38, sass/style.scss */
+dd {
+  padding-left: 30px;
+}
+
+/* line 42, sass/style.scss */
+table {
+  margin: 9px 30px;
+  font-size: 11pt;
+}
+
+/* line 47, sass/style.scss */
+ol {
+  list-style-type: lower-latin;
+  padding-left: 50px;
+}
+
+/* line 52, sass/style.scss */
+ul {
+  list-style-type: disc;
+  padding-left: 50px;
+}
+
+/* line 57, sass/style.scss */
+blockquote {
+  font-size: 11pt;
+  background-color: #eee;
+  padding: 10px;
+  margin: 9px 30px;
+}
+
+/* line 64, sass/style.scss */
+cite.block {
+  color: #555;
+  margin: 0 35px 15px 35px;
+  font-size: 0.7em;
+  display: block;
+}
+/* line 70, sass/style.scss */
+cite.block:before {
+  content: "- ";
+}
+
+/* line 75, sass/style.scss */
+#container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* line 80, sass/style.scss */
+.unit {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-bottom: 2px solid #cccccc;
+  border-top: none;
+}
+
+/* line 87, sass/style.scss */
+h1 {
+  color: #777;
+  font-size: 1.1em;
+  padding: 20px;
+  text-transform: uppercase;
+}
+/* line 93, sass/style.scss */
+h1 a {
+  color: #777;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-in;
+  -webkit-transition-delay: 0;
+  -moz-transition: color 0.5s ease-in 0;
+  -o-transition: color 0.5s ease-in 0;
+  transition: color 0.5s ease-in 0;
+}
+/* line 98, sass/style.scss */
+h1 a:hover {
+  color: #10A2EF;
+  -webkit-transition: color 0.2s ease-in;
+  -webkit-transition-delay: 0;
+  -moz-transition: color 0.2s ease-in 0;
+  -o-transition: color 0.2s ease-in 0;
+  transition: color 0.2s ease-in 0;
+}
+
+/* line 105, sass/style.scss */
+#header {
+  width: 940px;
+  background-color: #fff;
+  text-align: center;
+  border-top: none;
+  padding: 20px 20px 15px 20px;
+}
+/* line 112, sass/style.scss */
+#header h1 {
+  padding: 0;
+}
+/* line 116, sass/style.scss */
+#header p {
+  font-weight: bold;
+  color: #999;
+}
+
+/* line 122, sass/style.scss */
+#sidebar {
+  height: 100px;
+  float: right;
+  width: 300px;
+  margin-top: 20px;
+  padding-bottom: 200px;
+}
+/* line 129, sass/style.scss */
+#sidebar h2 {
+  color: #777;
+  text-transform: uppercase;
+  padding: 20px 30px 0 30px;
+}
+/* line 134, sass/style.scss */
+#sidebar h2 p {
+  padding: 0;
+}
+/* line 138, sass/style.scss */
+#sidebar h2 a {
+  color: #777;
+  text-decoration: none;
+}
+/* line 142, sass/style.scss */
+#sidebar h2 a:hover {
+  text-decoration: underline;
+}
+/* line 148, sass/style.scss */
+#sidebar .profile {
+  float: right;
+  margin: 0 30px -20px 20px;
+  top: -36px;
+  position: relative;
+}
+/* line 155, sass/style.scss */
+#sidebar .unit {
+  padding-bottom: 10px;
+}
+/* line 159, sass/style.scss */
+#sidebar .widget {
+  margin-bottom: 20px;
+}
+/* line 163, sass/style.scss */
+#sidebar .widget_search form {
+  padding: 0 30px 10px 30px;
+}
+/* line 166, sass/style.scss */
+#sidebar .widget_search form #s {
+  width: 185px;
+}
+/* line 171, sass/style.scss */
+#sidebar .widget_archive select {
+  margin: 10px 30px 10px 30px !important;
+}
+/* line 175, sass/style.scss */
+#sidebar a {
+  color: #1082ef;
+}
+/* line 178, sass/style.scss */
+#sidebar a:hover {
+  text-decoration: none;
+}
+/* line 183, sass/style.scss */
+#sidebar ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+/* line 187, sass/style.scss */
+#sidebar ul li {
+  padding: 5px 0;
+}
+/* line 192, sass/style.scss */
+#sidebar .twitter-follow-button {
+  display: block;
+  font-size: 0.8em;
+  padding: 10px 30px;
+}
+
+/* line 199, sass/style.scss */
+#content {
+  width: 620px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+/* line 205, sass/style.scss */
+.post, .comment-content {
+  color: #444;
+  margin-bottom: 20px;
+}
+/* line 209, sass/style.scss */
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6, .comment-content h1, .comment-content h2, .comment-content h3, .comment-content h4, .comment-content h5, .comment-content h6 {
+  color: #777;
+  padding: 0 30px;
+}
+/* line 214, sass/style.scss */
+.post h1, .comment-content h1 {
+  color: #444;
+  font-size: 1.2em;
+  padding: 12px 30px 5px;
+  text-transform: none;
+}
+/* line 220, sass/style.scss */
+.post h1 a, .comment-content h1 a {
+  color: #444;
+  text-decoration: none;
+}
+/* line 224, sass/style.scss */
+.post h1 a:hover, .comment-content h1 a:hover {
+  text-decoration: underline;
+}
+/* line 230, sass/style.scss */
+.post h2, .comment-content h2 {
+  font-size: 1.15em;
+  padding: 10px 30px 6px 30px;
+}
+/* line 235, sass/style.scss */
+.post h3, .comment-content h3 {
+  font-size: 1.1em;
+  padding: 10px 30px 6px 30px;
+}
+/* line 240, sass/style.scss */
+.post h4, .comment-content h4 {
+  font-size: 1.0em;
+  font-weight: bold;
+  padding: 6px 30px 4px;
+}
+/* line 246, sass/style.scss */
+.post h5, .post h6, .comment-content h5, .comment-content h6 {
+  padding: 5px 30px 3px;
+}
+/* line 250, sass/style.scss */
+.post a, .comment-content a {
+  color: #1082ef;
+}
+/* line 253, sass/style.scss */
+.post a:hover, .comment-content a:hover {
+  text-decoration: none;
+}
+/* line 258, sass/style.scss */
+.post abbr, .post acronym, .comment-content abbr, .comment-content acronym {
+  border-bottom: 1px dotted #444444;
+}
+/* line 262, sass/style.scss */
+.post big, .comment-content big {
+  font-size: 1.2em;
+}
+/* line 266, sass/style.scss */
+.post address, .comment-content address {
+  padding: 6px 30px;
+  font-size: 12pt;
+}
+/* line 270, sass/style.scss */
+.post address p, .comment-content address p {
+  font-size: 10pt;
+  padding: 0;
+}
+/* line 276, sass/style.scss */
+.post q:before, .comment-content q:before {
+  content: '"';
+}
+/* line 280, sass/style.scss */
+.post q:after, .comment-content q:after {
+  content: '"';
+}
+/* line 284, sass/style.scss */
+.post cite, .post var, .comment-content cite, .comment-content var {
+  font-style: italic;
+}
+/* line 288, sass/style.scss */
+.post sup, .comment-content sup {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+/* line 293, sass/style.scss */
+.post sub, .comment-content sub {
+  font-size: 0.8em;
+  vertical-align: sub;
+}
+/* line 298, sass/style.scss */
+.post code, .comment-content code {
+  font-family: Courier, monospace;
+  color: #777;
+}
+/* line 303, sass/style.scss */
+.post div div, .comment-content div div {
+  padding: 0 30px;
+}
+/* line 307, sass/style.scss */
+.post kbd, .post tt, .comment-content kbd, .comment-content tt {
+  font-family: Courier, monospace;
+}
+/* line 311, sass/style.scss */
+.post .gallery, .comment-content .gallery {
+  padding: 0 30px;
+}
+/* line 315, sass/style.scss */
+.post .wp-caption, .comment-content .wp-caption {
+  padding: 0 30px;
+  max-width: 560px;
+  text-align: center;
+}
+/* line 320, sass/style.scss */
+.post .wp-caption.alignleft, .comment-content .wp-caption.alignleft {
+  padding-right: 10px;
+}
+/* line 324, sass/style.scss */
+.post .wp-caption.alignright, .comment-content .wp-caption.alignright {
+  padding-left: 10px;
+}
+/* line 329, sass/style.scss */
+.post .wp-caption-text, .comment-content .wp-caption-text {
+  font-size: 0.8em;
+}
+/* line 333, sass/style.scss */
+.post embed, .comment-content embed {
+  max-width: 560px;
+}
+/* line 337, sass/style.scss */
+.post pre, .comment-content pre {
+  padding: 10px 30px;
+  max-width: 618px;
+  font-size: 0.9em;
+  overflow: auto;
+  font-family: Courier, monospace;
+  background-color: #eee;
+}
+/* line 346, sass/style.scss */
+.post .aligncenter, .comment-content .aligncenter {
+  display: block;
+  margin: 12px auto;
+}
+/* line 351, sass/style.scss */
+.post .alignleft, .comment-content .alignleft {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+/* line 357, sass/style.scss */
+.post .alignright, .comment-content .alignright {
+  display: block;
+  float: right;
+  margin-left: 10px;
+}
+/* line 363, sass/style.scss */
+.post .meta-top, .comment-content .meta-top {
+  font-size: 0.7em;
+  padding: 20px 0 0 30px;
+  margin-bottom: 0;
+  color: #777;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 372, sass/style.scss */
+.post .post-footer, .comment-content .post-footer {
+  font-size: 0.7em;
+  color: #777;
+  padding: 10px 0;
+  margin: 10px 30px 15px 30px;
+  border-top: 1px solid #aaaaaa;
+}
+/* line 379, sass/style.scss */
+.post .post-footer p, .comment-content .post-footer p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.0em;
+}
+/* line 385, sass/style.scss */
+.post .post-footer .comments-link, .comment-content .post-footer .comments-link {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-image: url("images/comment-16.png");
+  background-size: 16px 16px;
+  background-position: top left;
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+/* line 395, sass/style.scss */
+.post .post-footer .categories, .comment-content .post-footer .categories {
+  float: right;
+}
+/* line 398, sass/style.scss */
+.post .post-footer .categories a, .comment-content .post-footer .categories a {
+  padding: 1px 0 3px 20px;
+  background-repeat: no-repeat;
+  background-image: url("images/tag-16.png");
+  background-size: 16px 16px;
+  background-position: top left;
+}
+/* line 407, sass/style.scss */
+.post .post-footer a, .comment-content .post-footer a {
+  color: #777;
+  text-decoration: underline;
+}
+/* line 411, sass/style.scss */
+.post .post-footer a:hover, .comment-content .post-footer a:hover {
+  text-decoration: none;
+}
+/* line 417, sass/style.scss */
+.post .page-links, .comment-content .page-links {
+  padding: 10px 30px;
+  clear: both;
+}
+
+/* line 424, sass/style.scss */
+article img, img.size-full {
+  max-width: 100%;
+  height: auto;
+  /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+/* line 430, sass/style.scss */
+#navigation #next-link {
+  float: right;
+  padding: 22px 30px;
+}
+/* line 435, sass/style.scss */
+#navigation #prev-link {
+  padding: 22px 30px;
+}
+/* line 439, sass/style.scss */
+#navigation #next-link a, #navigation #prev-link a {
+  color: #777;
+  text-decoration: none;
+}
+/* line 443, sass/style.scss */
+#navigation #next-link a:hover, #navigation #prev-link a:hover {
+  text-decoration: underline;
+}
+
+/* line 449, sass/style.scss */
+#comments-title {
+  padding: 20px 30px;
+}
+/* line 452, sass/style.scss */
+#comments-title h2 {
+  color: #777;
+  text-transform: uppercase;
+}
+/* line 457, sass/style.scss */
+#comments-title p {
+  padding: 3px 0 0 0;
+  height: 16px;
+}
+
+/* line 463, sass/style.scss */
+#comment-form {
+  margin-top: 20px;
+  padding: 20px 30px;
+}
+/* line 467, sass/style.scss */
+#comment-form a {
+  color: #1082ef;
+}
+/* line 471, sass/style.scss */
+#comment-form p {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 476, sass/style.scss */
+#comment-form label {
+  display: block;
+}
+/* line 480, sass/style.scss */
+#comment-form textarea {
+  width: 550px;
+}
+
+/* line 485, sass/style.scss */
+#comment-nav-below {
+  padding: 0px 30px;
+  height: 54px;
+}
+
+/* line 490, sass/style.scss */
+.nav-previous a, .nav-next a {
+  font-size: 10pt;
+  text-decoration: none;
+  color: #1082ef;
+}
+/* line 495, sass/style.scss */
+.nav-previous a:hover, .nav-next a:hover {
+  text-decoration: underline;
+}
+
+/* line 500, sass/style.scss */
+.nav-next {
+  float: right;
+}
+
+/* line 504, sass/style.scss */
+.edit-link {
+  font-size: 0.8em;
+}
+
+/* line 508, sass/style.scss */
+.commentlist {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 512, sass/style.scss */
+.commentlist li {
+  margin: 10px 0;
+}
+/* line 515, sass/style.scss */
+.commentlist li .reply {
+  padding: 0 30px 20px 30px;
+}
+/* line 517, sass/style.scss */
+.commentlist li .reply a {
+  color: #777;
+  text-decoration: none;
+}
+/* line 521, sass/style.scss */
+.commentlist li .reply a:hover {
+  text-decoration: underline;
+}
+/* line 528, sass/style.scss */
+.commentlist a {
+  color: #1082ef;
+}
+/* line 531, sass/style.scss */
+.commentlist a:hover {
+  text-decoration: none;
+}
+/* line 536, sass/style.scss */
+.commentlist .avatar {
+  float: right;
+}
+/* line 540, sass/style.scss */
+.commentlist ul.children {
+  list-style-type: none;
+}
+/* line 543, sass/style.scss */
+.commentlist ul.children li {
+  border: none;
+  border-top: 1px solid #cccccc;
+}
+/* line 549, sass/style.scss */
+.commentlist .ct-commentmeta {
+  padding: 20px 30px 10px 30px;
+}
+
+/* line 554, sass/style.scss */
+.twitter-tweet-rendered {
+  padding-left: 30px;
+}
+
+/* Retina support for icons */
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 564, sass/style.scss */
+  .comments-link {
+    background-image: url("images/comment-32.png") !important;
+  }
+
+  /* line 568, sass/style.scss */
+  .categories {
+    background-image: url("images/tag-32.png") !important;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: top left;
+  }
+}

@@ -1,0 +1,574 @@
+/*
+Theme Name: Index Card
+Theme URI: http://cunningtitle.com/
+Description: A simple theme to focus on content and images
+Author: Rob Lowcock
+Author URI: http://cunningtitle.com/
+Version: 1.0
+Tags: fixed-width, minimalist, minimal, white
+
+License: MIT
+License URI: http://opensource.org/licenses/mit-license.php
+
+*/
+
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+	background-color: #e5e5e5;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+p, ul, ol, dl {
+	font-family: "Droid Sans", Helvetica, Arial, sans-serif;
+	padding: 9px 30px;
+	font-size: 10pt;
+	line-height: 14pt;
+}
+
+dd {
+	padding-left: 30px;
+}
+
+table {
+	margin: 9px 30px;
+	font-size: 11pt;
+}
+
+ol {
+	list-style-type: lower-latin;
+	padding-left: 50px;
+}
+
+ul {
+	list-style-type: disc;
+	padding-left: 50px;
+}
+
+blockquote {
+	font-size: 11pt;
+	background-color: #eee;
+	padding: 10px;
+	margin: 9px 30px;
+}
+
+cite.block {
+	color: #555;
+	margin: 0 35px 15px 35px;
+	font-size: 0.7em;
+	display: block;
+
+	&:before {
+		content: "- ";
+	}
+}
+
+#container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.unit {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #ccc;
+	border-top: none;
+}
+
+h1 {
+	color: #777;
+	font-size: 1.1em;
+	padding: 20px;
+	text-transform: uppercase;
+
+	a {
+		color: #777;
+		text-decoration: none;
+		@include single-transition(color, 0.5s, ease-in, 0);
+
+		&:hover {
+			color: #10A2EF;
+			@include single-transition(color, 0.2s, ease-in, 0);
+		}
+	}
+}
+
+#header {
+	width: 940px;
+	background-color: #fff;
+	text-align: center;
+	border-top: none;
+	padding: 20px 20px 15px 20px;
+
+	h1 {
+		padding: 0;
+	}
+
+	p {
+		font-weight: bold;
+		color: #999;
+	}
+}
+
+#sidebar {
+	height: 100px;
+	float: right;
+	width: 300px;
+	margin-top: 20px;
+	padding-bottom: 200px;
+
+	h2 {
+		color: #777;
+		text-transform: uppercase;
+		padding: 20px 30px 0 30px;
+
+		p {
+			padding: 0;
+		}
+
+		a {
+			color: #777;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.profile {
+		float: right;
+		margin: 0 30px -20px 20px;
+		top: -36px;
+		position: relative;
+	}
+
+	.unit {
+		padding-bottom: 10px;
+	}
+
+	.widget {
+		margin-bottom: 20px;
+	}
+
+	.widget_search form {
+		padding: 0 30px 10px 30px;
+
+		#s {
+			width: 185px;
+		}
+	}
+
+	.widget_archive select {
+		margin: 10px 30px 10px 30px !important;
+	}
+
+	a {
+		color: #1082ef;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		padding-left: 30px;
+
+		li {
+			padding: 5px 0;
+		}
+	}
+
+	.twitter-follow-button {
+		display: block;
+		font-size: 0.8em;
+		padding: 10px 30px;
+	}
+}
+
+#content {
+	width: 620px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+.post, .comment-content {
+	color: #444;
+	margin-bottom: 20px;
+	
+	h1, h2, h3, h4, h5, h6 {
+		color: #777;
+		padding: 0 30px;
+	}
+
+	h1 {
+		color: #444;
+		font-size: 1.2em;
+		padding: 12px 30px 5px;
+		text-transform: none;
+
+		a {
+			color: #444;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 1.15em;
+		padding: 10px 30px 6px 30px;
+	}
+
+	h3 {
+		font-size: 1.1em;
+		padding: 10px 30px 6px 30px;
+	}
+
+	h4 {
+		font-size: 1.0em;
+		font-weight: bold;
+		padding: 6px 30px 4px;
+	}
+
+	h5, h6 {
+		padding: 5px 30px 3px;
+	}
+
+	a {
+		color: #1082ef;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	abbr, acronym {
+		border-bottom: 1px dotted #444;
+	}
+
+	big {
+		font-size: 1.2em;
+	}
+
+	address {
+		padding: 6px 30px;
+		font-size: 12pt;
+
+		p {
+			font-size: 10pt;
+			padding: 0;
+		}
+	}
+
+	q:before {
+		content: '"';
+	}
+
+	q:after {
+		content: '"';
+	}
+
+	cite, var {
+		font-style: italic;
+	}
+
+	sup {
+		font-size: 0.8em;
+		vertical-align: super;
+	}
+
+	sub {
+		font-size: 0.8em;
+		vertical-align: sub;
+	}
+
+	code {
+		font-family: Courier, monospace;
+		color: #777;
+	}
+
+	div div {
+		padding: 0 30px;
+	}
+
+	kbd, tt {
+		font-family: Courier, monospace;
+	}
+
+	.gallery {
+		padding: 0 30px;
+	}
+
+	.wp-caption {
+		padding: 0 30px;
+		max-width: 560px;
+		text-align: center;
+
+		&.alignleft {
+			padding-right: 10px;
+		}
+
+		&.alignright {
+			padding-left: 10px;
+		}
+	}
+
+	.wp-caption-text {
+		font-size: 0.8em;
+	}
+
+	embed {
+		max-width: 560px
+	}
+
+	pre {
+		padding: 10px 30px;
+		max-width: 618px;
+		font-size: 0.9em;
+		overflow: auto;
+		font-family: Courier, monospace;
+		background-color: #eee; 
+	}
+
+	.aligncenter {
+		display: block;
+		margin: 12px auto;
+	}
+
+	.alignleft {
+		display: block;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.alignright {
+		display: block;
+		float: right;
+		margin-left: 10px;
+	}
+
+	.meta-top {
+		font-size: 0.7em;
+		padding: 20px 0 0 30px;
+		margin-bottom: 0;
+		color: #777;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.post-footer {
+		font-size: 0.7em;
+		color: #777;
+		padding: 10px 0;
+		margin: 10px 30px 15px 30px;
+		border-top: 1px solid #aaa;
+
+		p {
+			padding: 0;
+			margin: 0;
+			font-size: 1.0em;
+		}
+
+		.comments-link {
+			padding-left: 20px;
+			background-repeat: no-repeat;
+			background-image: url("images/comment-16.png");
+			background-size: 16px 16px;
+			background-position: top left;
+			padding-top: 1px;
+			padding-bottom: 3px;
+		}
+
+		.categories {
+			float: right;
+
+			a {
+				padding: 1px 0 3px 20px;
+				background-repeat: no-repeat;
+				background-image: url("images/tag-16.png");
+				background-size: 16px 16px;
+				background-position: top left;
+			}
+		}
+
+		a {
+			color: #777;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.page-links {
+		padding: 10px 30px;
+		clear: both;
+	}
+
+}
+
+article img, img.size-full {
+	max-width: 100%;
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+
+#navigation {
+	#next-link {
+		float: right;
+		padding: 22px 30px;
+	}
+
+	#prev-link {
+		padding: 22px 30px;
+	}
+
+	#next-link a, #prev-link a {
+		color: #777;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+#comments-title {
+	padding: 20px 30px;
+
+	h2 {
+		color: #777;
+		text-transform: uppercase;
+	}
+
+	p {
+		padding: 3px 0 0 0;
+		height: 16px;
+	}
+}
+
+#comment-form {
+	margin-top: 20px;
+	padding: 20px 30px;
+
+	a {
+		color: #1082ef;
+	}
+
+	p {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	label {
+		display: block;
+	}
+
+	textarea {
+		width: 550px;
+	}
+}
+
+#comment-nav-below {
+	padding: 0px 30px;
+	height: 54px;
+}
+
+.nav-previous a, .nav-next a {
+	font-size: 10pt;
+	text-decoration: none;
+	color: #1082ef;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.nav-next {
+	float: right;
+}
+
+.edit-link {
+	font-size: 0.8em;
+}
+
+.commentlist {
+	list-style-type: none;
+	padding: 0;
+
+	li {
+		margin: 10px 0;
+
+		.reply {
+			padding: 0 30px 20px 30px;
+			a {
+				color: #777;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	a {
+		color: #1082ef;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.avatar {
+		float: right;
+	}
+
+	ul.children {
+		list-style-type: none;
+
+		li {
+			border: none;
+			border-top: 1px solid #ccc;
+		}
+	}
+
+	.ct-commentmeta {
+		padding: 20px 30px 10px 30px;
+	}
+}
+
+.twitter-tweet-rendered {
+	padding-left: 30px;
+}
+
+/* Retina support for icons */
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .comments-link {
+    background-image: url("images/comment-32.png") !important;
+  }
+
+  .categories {
+  	background-image: url("images/tag-32.png") !important;
+  	background-repeat: no-repeat;
+  	background-size: 16px 16px;
+	background-position: top left;
+  }
+}
