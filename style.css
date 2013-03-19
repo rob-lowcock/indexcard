@@ -1,11 +1,10 @@
 /*
 Theme Name: Index Card
-Theme URI: http://cunningtitle.com/
 Description: A simple theme to focus on content and images
 Author: Rob Lowcock
 Author URI: http://cunningtitle.com/
 Version: 1.0
-Tags: fixed-width, minimalist, minimal, white
+Tags: fixed-width, featured-images, threaded-comments, right-sidebar, white
 
 License: MIT
 License URI: http://opensource.org/licenses/mit-license.php
@@ -76,23 +75,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 18, sass/style.scss */
+/* line 17, sass/style.scss */
 body {
   background-color: #e5e5e5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 23, sass/style.scss */
+/* line 22, sass/style.scss */
 em {
   font-style: italic;
 }
 
-/* line 27, sass/style.scss */
+/* line 26, sass/style.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 31, sass/style.scss */
+/* line 30, sass/style.scss */
 p, ul, ol, dl {
   font-family: "Droid Sans", Helvetica, Arial, sans-serif;
   padding: 9px 30px;
@@ -100,30 +99,30 @@ p, ul, ol, dl {
   line-height: 14pt;
 }
 
-/* line 38, sass/style.scss */
+/* line 37, sass/style.scss */
 dd {
   padding-left: 30px;
 }
 
-/* line 42, sass/style.scss */
+/* line 41, sass/style.scss */
 table {
   margin: 9px 30px;
   font-size: 11pt;
 }
 
-/* line 47, sass/style.scss */
+/* line 46, sass/style.scss */
 ol {
   list-style-type: lower-latin;
   padding-left: 50px;
 }
 
-/* line 52, sass/style.scss */
+/* line 51, sass/style.scss */
 ul {
   list-style-type: disc;
   padding-left: 50px;
 }
 
-/* line 57, sass/style.scss */
+/* line 56, sass/style.scss */
 blockquote {
   font-size: 11pt;
   background-color: #eee;
@@ -131,25 +130,25 @@ blockquote {
   margin: 9px 30px;
 }
 
-/* line 64, sass/style.scss */
+/* line 63, sass/style.scss */
 cite.block {
   color: #555;
   margin: 0 35px 15px 35px;
   font-size: 0.7em;
   display: block;
 }
-/* line 70, sass/style.scss */
+/* line 69, sass/style.scss */
 cite.block:before {
   content: "- ";
 }
 
-/* line 75, sass/style.scss */
+/* line 74, sass/style.scss */
 #container {
   width: 940px;
   margin: 0 auto;
 }
 
-/* line 80, sass/style.scss */
+/* line 79, sass/style.scss */
 .unit {
   background-color: #fff;
   border: 1px solid #dddddd;
@@ -157,14 +156,14 @@ cite.block:before {
   border-top: none;
 }
 
-/* line 87, sass/style.scss */
+/* line 86, sass/style.scss */
 h1 {
   color: #777;
   font-size: 1.1em;
   padding: 20px;
   text-transform: uppercase;
 }
-/* line 93, sass/style.scss */
+/* line 92, sass/style.scss */
 h1 a {
   color: #777;
   text-decoration: none;
@@ -174,7 +173,7 @@ h1 a {
   -o-transition: color 0.5s ease-in 0;
   transition: color 0.5s ease-in 0;
 }
-/* line 98, sass/style.scss */
+/* line 97, sass/style.scss */
 h1 a:hover {
   color: #10A2EF;
   -webkit-transition: color 0.2s ease-in;
@@ -184,21 +183,22 @@ h1 a:hover {
   transition: color 0.2s ease-in 0;
 }
 
-/* line 105, sass/style.scss */
+/* line 104, sass/style.scss */
 #header {
   width: 940px;
   background-color: #fff;
   text-align: center;
   border-top: none;
-  padding: 20px 20px 15px 20px;
+  padding: 20px 0;
 }
-/* line 112, sass/style.scss */
+/* line 111, sass/style.scss */
 #header h1 {
-  padding: 0;
+  padding: 0 20px;
 }
-/* line 116, sass/style.scss */
+/* line 115, sass/style.scss */
 #header p {
   font-weight: bold;
+  padding: 10px 20px 0 20px;
   color: #999;
 }
 
@@ -463,7 +463,11 @@ h1 a:hover {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 380, sass/style.scss */
+/* line 379, sass/style.scss */
+.post .meta-top .meta-author, .comment-content .meta-top .meta-author {
+  color: #aaa;
+}
+/* line 384, sass/style.scss */
 .post .post-footer, .comment-content .post-footer {
   font-size: 0.7em;
   color: #777;
@@ -471,13 +475,13 @@ h1 a:hover {
   margin: 10px 30px 15px 30px;
   border-top: 1px solid #aaaaaa;
 }
-/* line 387, sass/style.scss */
+/* line 391, sass/style.scss */
 .post .post-footer p, .comment-content .post-footer p {
   padding: 0;
   margin: 0;
   font-size: 1.0em;
 }
-/* line 393, sass/style.scss */
+/* line 397, sass/style.scss */
 .post .post-footer .comments-link, .comment-content .post-footer .comments-link {
   padding-left: 20px;
   background-repeat: no-repeat;
@@ -487,11 +491,11 @@ h1 a:hover {
   padding-top: 1px;
   padding-bottom: 3px;
 }
-/* line 403, sass/style.scss */
+/* line 407, sass/style.scss */
 .post .post-footer .categories, .comment-content .post-footer .categories {
   float: right;
 }
-/* line 406, sass/style.scss */
+/* line 410, sass/style.scss */
 .post .post-footer .categories a, .comment-content .post-footer .categories a {
   padding: 1px 0 3px 20px;
   background-repeat: no-repeat;
@@ -499,188 +503,201 @@ h1 a:hover {
   background-size: 16px 16px;
   background-position: top left;
 }
-/* line 415, sass/style.scss */
+/* line 419, sass/style.scss */
+.post .post-footer .taglist, .comment-content .post-footer .taglist {
+  padding-bottom: 5px;
+}
+/* line 423, sass/style.scss */
 .post .post-footer a, .comment-content .post-footer a {
   color: #777;
   text-decoration: underline;
 }
-/* line 419, sass/style.scss */
+/* line 427, sass/style.scss */
 .post .post-footer a:hover, .comment-content .post-footer a:hover {
   text-decoration: none;
 }
-/* line 425, sass/style.scss */
+/* line 433, sass/style.scss */
 .post .page-links, .comment-content .page-links {
   padding: 10px 30px;
   clear: both;
 }
+/* line 438, sass/style.scss */
+.post.sticky, .comment-content.sticky {
+  border-top: 2px solid #1082ef;
+}
 
-/* line 432, sass/style.scss */
+/* line 444, sass/style.scss */
+.bypostauthor {
+  border-top: 2px solid #1082ef;
+}
+
+/* line 448, sass/style.scss */
 article img, img.size-full {
   max-width: 100%;
   height: auto;
   /* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
 
-/* line 438, sass/style.scss */
+/* line 454, sass/style.scss */
 #navigation #next-link {
   float: right;
   padding: 22px 30px;
 }
-/* line 443, sass/style.scss */
+/* line 459, sass/style.scss */
 #navigation #prev-link {
   padding: 22px 30px;
 }
-/* line 447, sass/style.scss */
+/* line 463, sass/style.scss */
 #navigation #next-link a, #navigation #prev-link a {
   color: #777;
   text-decoration: none;
 }
-/* line 451, sass/style.scss */
+/* line 467, sass/style.scss */
 #navigation #next-link a:hover, #navigation #prev-link a:hover {
   text-decoration: underline;
 }
 
-/* line 457, sass/style.scss */
+/* line 473, sass/style.scss */
 #comments-title {
   padding: 20px 30px;
 }
-/* line 460, sass/style.scss */
+/* line 476, sass/style.scss */
 #comments-title h2 {
   color: #777;
   text-transform: uppercase;
 }
-/* line 465, sass/style.scss */
+/* line 481, sass/style.scss */
 #comments-title p {
   padding: 3px 0 0 0;
   height: 16px;
 }
 
-/* line 471, sass/style.scss */
+/* line 487, sass/style.scss */
 #comment-form {
   margin-top: 20px;
   padding: 20px 30px;
 }
-/* line 475, sass/style.scss */
+/* line 491, sass/style.scss */
 #comment-form a {
   color: #1082ef;
 }
-/* line 479, sass/style.scss */
+/* line 495, sass/style.scss */
 #comment-form p {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 484, sass/style.scss */
+/* line 500, sass/style.scss */
 #comment-form label {
   display: block;
 }
-/* line 488, sass/style.scss */
+/* line 504, sass/style.scss */
 #comment-form textarea {
   width: 550px;
 }
 
-/* line 493, sass/style.scss */
+/* line 509, sass/style.scss */
 #comment-nav-below {
   padding: 0px 30px;
   height: 54px;
 }
 
-/* line 498, sass/style.scss */
+/* line 514, sass/style.scss */
 .nav-previous a, .nav-next a {
   font-size: 10pt;
   text-decoration: none;
   color: #1082ef;
 }
-/* line 503, sass/style.scss */
+/* line 519, sass/style.scss */
 .nav-previous a:hover, .nav-next a:hover {
   text-decoration: underline;
 }
 
-/* line 508, sass/style.scss */
+/* line 524, sass/style.scss */
 .nav-next {
   float: right;
 }
 
-/* line 512, sass/style.scss */
+/* line 528, sass/style.scss */
 .edit-link {
   font-size: 0.8em;
 }
 
-/* line 516, sass/style.scss */
+/* line 532, sass/style.scss */
 .commentlist {
   list-style-type: none;
   padding: 0;
 }
-/* line 520, sass/style.scss */
+/* line 536, sass/style.scss */
 .commentlist li {
   margin: 10px 0;
 }
-/* line 523, sass/style.scss */
+/* line 539, sass/style.scss */
 .commentlist li .reply {
   padding: 0 30px 20px 30px;
 }
-/* line 525, sass/style.scss */
+/* line 541, sass/style.scss */
 .commentlist li .reply a {
   color: #777;
   text-decoration: none;
 }
-/* line 529, sass/style.scss */
+/* line 545, sass/style.scss */
 .commentlist li .reply a:hover {
   text-decoration: underline;
 }
-/* line 536, sass/style.scss */
+/* line 552, sass/style.scss */
 .commentlist a {
   color: #1082ef;
 }
-/* line 539, sass/style.scss */
+/* line 555, sass/style.scss */
 .commentlist a:hover {
   text-decoration: none;
 }
-/* line 544, sass/style.scss */
+/* line 560, sass/style.scss */
 .commentlist .avatar {
   float: right;
 }
-/* line 548, sass/style.scss */
+/* line 564, sass/style.scss */
 .commentlist ul.children {
   list-style-type: none;
 }
-/* line 551, sass/style.scss */
+/* line 567, sass/style.scss */
 .commentlist ul.children li {
   border: none;
   border-top: 1px solid #cccccc;
 }
-/* line 557, sass/style.scss */
+/* line 573, sass/style.scss */
 .commentlist .ct-commentmeta {
   padding: 20px 30px 10px 30px;
 }
 
-/* line 562, sass/style.scss */
+/* line 578, sass/style.scss */
 .twitter-tweet-rendered {
   padding-left: 30px;
 }
 
-/* line 566, sass/style.scss */
+/* line 582, sass/style.scss */
 .page-404 {
   padding: 15px 0 25px 0;
 }
-/* line 569, sass/style.scss */
+/* line 585, sass/style.scss */
 .page-404 .error-code {
   font-weight: bold;
   color: #ccc;
 }
 
-/* line 577, sass/style.scss */
+/* line 593, sass/style.scss */
 .search-404 h2 {
   padding-left: 0;
 }
 
 /* Retina support for icons */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 589, sass/style.scss */
+  /* line 605, sass/style.scss */
   .comments-link {
     background-image: url("images/comment-32.png") !important;
   }
 
-  /* line 593, sass/style.scss */
+  /* line 609, sass/style.scss */
   .categories {
     background-image: url("images/tag-32.png") !important;
     background-repeat: no-repeat;

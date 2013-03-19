@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
-    <?php //wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 	<div id="container">
 		<header id="header" class="unit">
 			<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>

@@ -1,11 +1,10 @@
 /*
 Theme Name: Index Card
-Theme URI: http://cunningtitle.com/
 Description: A simple theme to focus on content and images
 Author: Rob Lowcock
 Author URI: http://cunningtitle.com/
 Version: 1.0
-Tags: fixed-width, minimalist, minimal, white
+Tags: fixed-width, featured-images, threaded-comments, right-sidebar, white
 
 License: MIT
 License URI: http://opensource.org/licenses/mit-license.php
@@ -107,14 +106,15 @@ h1 {
 	background-color: #fff;
 	text-align: center;
 	border-top: none;
-	padding: 20px 20px 15px 20px;
+	padding: 20px 0;
 
 	h1 {
-		padding: 0;
+		padding: 0 20px;
 	}
 
 	p {
 		font-weight: bold;
+		padding: 10px 20px 0 20px;
 		color: #999;
 	}
 }
@@ -375,6 +375,10 @@ h1 {
 		color: #777;
 		font-weight: bold;
 		text-transform: uppercase;
+
+		.meta-author {
+			color: #aaa;
+		}
 	}
 
 	.post-footer {
@@ -412,6 +416,10 @@ h1 {
 			}
 		}
 
+		.taglist {
+			padding-bottom: 5px;
+		}
+
 		a {
 			color: #777;
 			text-decoration: underline;
@@ -427,6 +435,14 @@ h1 {
 		clear: both;
 	}
 
+	&.sticky {
+		border-top: 2px solid #1082ef;
+	}
+
+}
+
+.bypostauthor {
+	border-top: 2px solid #1082ef;
 }
 
 article img, img.size-full {

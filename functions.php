@@ -7,6 +7,7 @@ $GLOBALS['content_width'] = 618;
 if ( function_exists( 'add_theme_support' ) ) { 
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'custom-background', array('default-color' => 'e5e5e5') );
 	set_post_thumbnail_size( 618, 150, true ); // default Post Thumbnail dimensions (cropped)
 }
 
@@ -32,7 +33,7 @@ function cunningtitle_comment($comment, $args, $depth) {
 		default :
 	?>
 	<li <?php comment_class('unit'); ?> id="li-comment-<?php comment_ID(); ?>">
-		<article id="comment-<?php comment_ID(); ?>" class="comment">
+		<article id="comment-<?php comment_ID(); ?>" <?php comment_class('comment'); ?>>
 			<footer class="comment-meta">
 				<div class="comment-author vcard">
 					<?php
