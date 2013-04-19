@@ -7,7 +7,7 @@ License: MIT
 License URI: http://opensource.org/licenses/mit-license.php
 
 
-== Installation ==
+### Installation
 
 This section describes how to install the plugin and get it working.
 
@@ -15,11 +15,11 @@ This section describes how to install the plugin and get it working.
 2. Activate the theme via the 'Themes' menu in WordPress 
 
 
-== Changelog ==
+### Changelog
 
-= 1.0 =
+#### 1.0
 * Initial release
 
 
-== Notes ==
+### Notes
 I'm aware this theme isn't yet in a state where it can be submitted for review by the WordPress team - I'm working on it!
