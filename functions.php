@@ -12,6 +12,7 @@ add_action( 'widgets_init', function(){
         'after_widget' => '</div>',
     ));
 });
+add_action('wp_enqueue_scripts', 'indexcard_theme_styles');
 
 function indexcard_setup() {
 
@@ -20,6 +21,27 @@ function indexcard_setup() {
 	add_theme_support( 'custom-background', array('default-color' => 'e5e5e5') );
 	set_post_thumbnail_size( 618, 150, true ); // default Post Thumbnail dimensions (cropped)
     
+}
+
+function indexcard_theme_styles()  
+{ 
+  // Register the style like this for a theme:  
+  // (First the unique name for the style (custom-style) then the src, 
+  // then dependencies and ver no. and media type)
+  wp_register_style( 'screen', 
+    get_template_directory_uri() . '/style.css', 
+    array(), 
+    '20130421', 
+    'screen' );
+  wp_register_style( 'fonts',
+  	'http://fonts.googleapis.com/css?family=Droid+Sans:400,700',
+  	array(),
+  	'20130421',
+  	'screen' );
+
+  // enqueing:
+  wp_enqueue_style( 'screen' );
+
 }
 
 function indexcard_filter_wp_title($title, $sep, $sep_location) {
