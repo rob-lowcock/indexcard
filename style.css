@@ -10,7 +10,7 @@ License: MIT
 License URI: http://opensource.org/licenses/mit-license.php
 
 */
-/* line 17, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,45 +32,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -558,146 +558,156 @@ article img, img.size-full {
 }
 
 /* line 473, sass/style.scss */
+.meta-permalink {
+  font-weight: normal;
+}
+/* line 477, sass/style.scss */
+.meta-permalink a {
+  color: #777;
+  font-weight: normal;
+}
+
+/* line 483, sass/style.scss */
 #comments-title {
   padding: 20px 30px;
 }
-/* line 476, sass/style.scss */
+/* line 486, sass/style.scss */
 #comments-title h2 {
   color: #777;
   text-transform: uppercase;
 }
-/* line 481, sass/style.scss */
+/* line 491, sass/style.scss */
 #comments-title p {
   padding: 3px 0 0 0;
   height: 16px;
 }
 
-/* line 487, sass/style.scss */
+/* line 497, sass/style.scss */
 #comment-form {
   margin-top: 20px;
   padding: 20px 30px;
 }
-/* line 491, sass/style.scss */
+/* line 501, sass/style.scss */
 #comment-form a {
   color: #1082ef;
 }
-/* line 495, sass/style.scss */
+/* line 505, sass/style.scss */
 #comment-form p {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 500, sass/style.scss */
+/* line 510, sass/style.scss */
 #comment-form label {
   display: block;
 }
-/* line 504, sass/style.scss */
+/* line 514, sass/style.scss */
 #comment-form textarea {
   width: 550px;
 }
 
-/* line 509, sass/style.scss */
+/* line 519, sass/style.scss */
 #comment-nav-below {
   padding: 0px 30px;
   height: 54px;
 }
 
-/* line 514, sass/style.scss */
+/* line 524, sass/style.scss */
 .nav-previous a, .nav-next a {
   font-size: 10pt;
   text-decoration: none;
   color: #1082ef;
 }
-/* line 519, sass/style.scss */
+/* line 529, sass/style.scss */
 .nav-previous a:hover, .nav-next a:hover {
   text-decoration: underline;
 }
 
-/* line 524, sass/style.scss */
+/* line 534, sass/style.scss */
 .nav-next {
   float: right;
 }
 
-/* line 528, sass/style.scss */
+/* line 538, sass/style.scss */
 .edit-link {
   font-size: 0.8em;
 }
 
-/* line 532, sass/style.scss */
+/* line 542, sass/style.scss */
 .commentlist {
   list-style-type: none;
   padding: 0;
 }
-/* line 536, sass/style.scss */
+/* line 546, sass/style.scss */
 .commentlist li {
   margin: 10px 0;
 }
-/* line 539, sass/style.scss */
+/* line 549, sass/style.scss */
 .commentlist li .reply {
   padding: 0 30px 20px 30px;
 }
-/* line 541, sass/style.scss */
+/* line 551, sass/style.scss */
 .commentlist li .reply a {
   color: #777;
   text-decoration: none;
 }
-/* line 545, sass/style.scss */
+/* line 555, sass/style.scss */
 .commentlist li .reply a:hover {
   text-decoration: underline;
 }
-/* line 552, sass/style.scss */
+/* line 562, sass/style.scss */
 .commentlist a {
   color: #1082ef;
 }
-/* line 555, sass/style.scss */
+/* line 565, sass/style.scss */
 .commentlist a:hover {
   text-decoration: none;
 }
-/* line 560, sass/style.scss */
+/* line 570, sass/style.scss */
 .commentlist .avatar {
   float: right;
 }
-/* line 564, sass/style.scss */
+/* line 574, sass/style.scss */
 .commentlist ul.children {
   list-style-type: none;
 }
-/* line 567, sass/style.scss */
+/* line 577, sass/style.scss */
 .commentlist ul.children li {
   border: none;
   border-top: 1px solid #cccccc;
 }
-/* line 573, sass/style.scss */
+/* line 583, sass/style.scss */
 .commentlist .ct-commentmeta {
   padding: 20px 30px 10px 30px;
 }
 
-/* line 578, sass/style.scss */
+/* line 588, sass/style.scss */
 .twitter-tweet-rendered {
   padding-left: 30px;
 }
 
-/* line 582, sass/style.scss */
+/* line 592, sass/style.scss */
 .page-404 {
   padding: 15px 0 25px 0;
 }
-/* line 585, sass/style.scss */
+/* line 595, sass/style.scss */
 .page-404 .error-code {
   font-weight: bold;
   color: #ccc;
 }
 
-/* line 593, sass/style.scss */
+/* line 603, sass/style.scss */
 .search-404 h2 {
   padding-left: 0;
 }
 
 /* Retina support for icons */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 605, sass/style.scss */
+  /* line 615, sass/style.scss */
   .comments-link {
     background-image: url("images/comment-32.png") !important;
   }
 
-  /* line 609, sass/style.scss */
+  /* line 619, sass/style.scss */
   .categories {
     background-image: url("images/tag-32.png") !important;
     background-repeat: no-repeat;

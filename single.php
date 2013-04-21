@@ -10,7 +10,8 @@
 					the_post_thumbnail();
 				} ?>
 				<header>
-				<p class="meta-top"><time pubdate datetime="<?php the_time('Y-m-d\TH:i') ?><?php echo $offset; ?>"><?php the_time('jS F Y, g:ia') ?></time> <span class="meta-author">by <?php the_author(); ?></span></p>
+				<p class="meta-top">
+					<time pubdate datetime="<?php the_time('Y-m-d\TH:i') ?><?php echo $offset; ?>"><?php the_time('jS F Y, g:ia') ?></time> <span class="meta-author">by <?php the_author(); ?></span><span class="meta-permalink"> | <a href="<?php the_permalink(); ?>">Permalink</a></span></p>
 				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 				</header>
 				<?php the_content(); ?>
