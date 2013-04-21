@@ -33,7 +33,7 @@
 
 	<ol class="commentlist">
 		<?php
-			wp_list_comments( array( 'callback' => 'cunningtitle_comment' ) );
+			wp_list_comments( array( 'callback' => 'indexcard_comment' ) );
 		?>
 	</ol>
 

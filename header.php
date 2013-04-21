@@ -4,7 +4,6 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title>
         <?php wp_title('|',true,'right'); ?>
-        <?php bloginfo('name'); ?>
     </title>
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
