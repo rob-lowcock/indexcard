@@ -5,6 +5,13 @@ if ( ! isset( $content_width ) ) $content_width = 618;
 $GLOBALS['content_width'] = 618;
 
 add_action( 'after_setup_theme', 'indexcard_setup' );
+add_action( 'widgets_init', function(){
+     register_sidebar(array(
+    	'name' => 'Sidebar',
+        'before_widget' => '<div id="%1$s" class="unit widget %2$s">',
+        'after_widget' => '</div>',
+    ));
+});
 
 function indexcard_setup() {
 
@@ -12,12 +19,7 @@ function indexcard_setup() {
 	add_theme_support( 'post-thumbnails' );
 	add_theme_support( 'custom-background', array('default-color' => 'e5e5e5') );
 	set_post_thumbnail_size( 618, 150, true ); // default Post Thumbnail dimensions (cropped)
-
-    register_sidebar(array(
-    	'name' => 'Sidebar',
-        'before_widget' => '<div id="%1$s" class="unit widget %2$s">',
-        'after_widget' => '</div>',
-    ));
+    
 }
 
 function indexcard_filter_wp_title($title, $sep, $sep_location) {
