@@ -15,6 +15,6 @@
 <body <?php body_class(); ?>>
 	<div id="container">
 		<header id="header" class="unit">
-			<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+			<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo('name'); ?></a></h1>
             <p><?php bloginfo('description'); ?></p>
 		</header>
