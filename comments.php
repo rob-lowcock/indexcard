@@ -53,11 +53,13 @@
 	 */
 	elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) :
 ?>
-	<p class="nocomments">Comments are closed</p>
+	<div class="unit"><p class="nocomments">Comments are closed</p></div>
 <?php endif; ?>
 
+<?php if ( comments_open() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 <div class="unit" id="comment-form">
 <?php comment_form(); ?>
 </div>
+<?php endif; ?>
 
 </div><!-- #comments -->
